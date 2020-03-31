@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+    <div style="padding:10rem 10rem 5rem;" class="terms-policy">
+        <div>
+            {{ term|safe }}
+        </div>
+    </div>
+		
+{% endblock content %}

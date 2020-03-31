@@ -1,0 +1,40 @@
+    {% load static %}
+    <header class="main-header header-style-one">
+        <div class="auto-container">
+            <div class="header-lower">
+                <div class="main-box clearfix">
+                    <div class="logo-box">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="{% static 'img/logo-01.png' %}" width="168" height="23" alt="" title="" class = "fullscreen-logo">
+                                <img src="{% static 'img/logo-02.png' %}" width="168" height="23" alt="" title="" class = "mobile-logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-md ">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->      
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon flaticon-menu-button"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li><a href="/">Home</a>
+                                    </li>
+                                    <li><a href="/policy">Policy</a>
+                                    </li>
+                                    <li><a href="/terms">T&C</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav><!-- Main Menu End-->  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

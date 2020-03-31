@@ -1,0 +1,33 @@
+{% load static %}
+<section class="testimonials testimonials--bg-white">
+    <div class="testimonials__inner">
+       <h3 class="testimonials__title">Customer Testimonials</h3>
+       <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IHPcsPVpTdw?rel=0&amp;showinfo=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+       </div>
+       <div class="embed-responsive embed-responsive-16by9">
+         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OiC5robPJ4w?rel=0&amp;showinfo=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+      </div>
+       <div class="testimonials__list">
+          {% for customer in customers %}
+          <div class="testimonials__item">
+             <div class="testimonials__photo">
+                <img src="media/{{customer.image}}" width="75" height="75" alt="">
+             </div>
+             <div class="testimonials__content">
+                <p class="testimonials__text">
+                   <span class="o"></span>{{customer.quote}}<span class="c"></span>
+                </p>
+                <p class="testimonials__author">
+                   <span class="testimonials__author-name">{{customer.customer_name}}</span>
+                   <span class="testimonials__author-info">{{customer.location}}</span>
+                </p>
+             </div>
+          </div>
+          {% endfor %}
+       </div>
+       <div class="testimonials__cta">
+          <a href="{{trip}}" class="btn btn--primary" target="_blank">Start Now</a>
+       </div>
+    </div>
+ </section>
